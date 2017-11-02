@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        .mainArea{
+            margin: 0 0 15px 20px;
+        }
+        textarea{
+            margin-bottom: 0 !important;
+            width: 260px;
+            height: 88px;
+            border: 1px solid #cccccc;
+            resize: none;
+        }
+        span{
+            position: relative;
+            bottom: 79px;
+        }
+        input[type='submit']{
+            width: 122px;
+            height: 44px;
+            background-color: #d853b7;
+            border: none;
+            font-size: 1.2em;
+            color: #fff;
+            margin: 15px 0 0 52px;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <ul>
+        <li>
+            <label>头像<input type="file" class="mainArea"></label>
+        </li>
+        <li>
+            <label>昵称<input type="text" class="mainArea"></label>
+        </li>
+        <li>
+            <label>学历
+                <select class="mainArea">
+                    <option selected>大专</option>
+                    <option>本科</option>
+                </select>
+            </label>
+        </li>
+        <li>
+            <label>性别
+                <label><input type="radio" name="1" checked class="mainArea">男</label>
+                <label><input type="radio" name="1" class="mainArea">女</label>
+            </label>
+        </li>
+        <li>
+            <label>爱好
+                <label><input type="checkbox" class="mainArea" checked>电影</label>
+                <label><input type="checkbox" class="mainArea">摄影</label>
+                <label><input type="checkbox" class="mainArea">音乐</label>
+                <label><input type="checkbox" class="mainArea" checked>阅读</label>
+            </label>
+        </li>
+        <li>
+            <label><span>签名</span><textarea class="mainArea"></textarea></label>
+        </li>
+        <li>
+            <input type="submit" value="保存">
+        </li>
+    </ul>
+</form>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        span{
+            font-size: 16px;
+        }
+        table.TB{
+            text-align: center;
+            font-family: verdana,arial,sans-serif;
+            font-size: 11px;
+            color: #333333;
+            border-collapse: collapse;
+
+        }
+        table.TB th {
+            border: 1px solid #ccc;
+            width: 30px;
+            padding: 8px;
+            background-color: #f0f0f4;
+
+        }
+        table.TB td {
+            border: 1px solid #ccc;
+            padding: 15px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+<table class="TB">
+    <caption><span><strong>运费详情</strong></span></caption>
+    <thead>
+    <tr>
+        <th>区域</th>
+        <th>寄达地</th>
+        <th>首重（元/1000g）</th>
+        <th>续重（元/1000g）</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th rowspan="2">一区</th>
+        <td>浙江、上海、江苏</td>
+        <td>6</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>江西、安徽</td>
+        <td>7</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <th>二区</th>
+        <td>北京、天津、河北、山东、山西</td>
+        <td>9</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <th>三区</th>
+        <td>辽宁、甘肃、四川</td>
+        <td>10</td>
+        <td>4</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

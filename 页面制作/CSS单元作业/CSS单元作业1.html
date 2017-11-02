@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>css01</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="" rel="stylesheet">
+    <style type="text/css">
+        *{
+            color: #fff;
+            font: bold 23px/188px microsoft yahei;
+            text-align: center;
+        }
+        .main{
+            background-color: rgb(79,129,189);
+            height: 200px;
+            margin-left: 210px;
+            width: 600px;
+        }
+        .parent{
+            height: 200px;
+            margin: 0 auto;
+            width: 810px;
+        }
+        .parent :after {
+            clear: both;
+            content: '.';
+            display: block;
+            height: 0;
+            visibility: hidden;
+            width: 0;
+        }
+        .side{
+            background-color: rgb(192,0,0);
+            float: left;
+            height: 200px;
+            margin-right: 10px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div class="side">侧栏</div>
+    <div class="main">主栏</div>
+</div>
+</body>
+</html>
